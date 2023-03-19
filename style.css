@@ -1,0 +1,199 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+}
+
+.container > *,
+section{
+    border: 1px solid black;
+}
+
+.container{
+    display: grid;
+}
+
+/* 
+    HEADER
+*/
+header{
+    padding: 1em;
+}
+
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-item:nth-child(3){
+    margin-left: 5em;
+}
+
+/* MENU BAR */
+
+.menu-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65vw;
+    height: 100vh;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+.hide{
+    display: none;
+}
+.menu-bar-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    gap: 1em;
+}
+
+.menu-bar-list-item:nth-child(1){
+    margin-bottom: 1.5em;
+}
+
+/* SECTIONS */
+section:nth-child(2){
+    padding: 1em;
+}
+/* 
+    IMAGES
+*/
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+.user-avatar{
+    width: 35px;
+    height: 35px;
+}
+
+
+.prev-icon{
+    position: absolute;
+    top: 13em;
+    left: 1em;
+    width: 2em;
+    height: 2em;
+    padding: 0.4em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.next-icon{
+    position: absolute;
+    top: 13em;
+    right: 1em;
+    width: 2em;
+    height: 2em;
+    padding: 0.4em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.filter{
+    background-color: hsl(0, 4%, 37%);
+    filter: brightness(30%);
+}
+
+/* Typography */
+h2{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+p{
+    color: hsl(219, 9%, 45%);
+    line-height: 1.5;
+}
+
+.price-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    align-items: center;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.discount{
+    display: inline-block;
+    border: none;
+    padding: 0.2em 0.4em;
+    color: hsl(26, 100%, 55%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: hsl(220, 20%, 94%);
+    border-radius: 5px;
+}
+
+.original-price{
+    color: hsl(228, 4%, 74%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: auto;
+    text-decoration: line-through;
+}
+
+.cart-item-count{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: auto;
+    align-items: center;
+    background-color: hsl(223, 64%, 98%);
+    padding: 1.2em 2em;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 1.3em 0 1em 0;
+}
+
+/* BUTTONS */
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: hsl(26, 100%, 55%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 1.2em 2em;
+    border-radius: 10px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+}

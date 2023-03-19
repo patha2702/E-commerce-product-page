@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	
+	<title>E-commerce product page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav class="nav-bar">
+				<ul class="nav-list">
+					<li class="nav-list-item" id="menu-icon"><img src="./images/icon-menu.svg" alt="menu icon"></li>
+					<li class="nav-list-item"><img src="./images/logo.svg" alt="Sneakers logo"></li>
+					<li class="nav-list-item"><img src="./images/icon-cart.svg" alt="cart icon"></li>
+					<li class="nav-list-item"><img src="./images/image-avatar.png" alt="user avatar" class="user-avatar"></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="image-container">
+				<img src="./images/image-product-1.jpg" alt="product 1 image" class="product-image">
+				<img src="./images/icon-previous.svg" alt="previous icon" class="prev-icon"/>
+				<img src="./images/icon-next.svg" alt="next icon" class="next-icon"/>
+			</section>
+
+			<section>
+				<h2>Sneaker Company</h2>
+
+				<h3>Fall Limited Edition Sneakers</h3>
+
+				<p>
+					These low-profile sneakers are your perfect casual wear companion. Featuring a 
+					durable rubber outer sole, they'll withstand everything the weather can offer.
+				</p>
+
+				<div class="price-container">
+					<span class="price">$125.00</span>
+					<span class="discount">50%</span>
+					<span class="original-price">$250.00</span>
+				</div>
+				
+
+				<div class="cart-item-count">
+					<img src="./images/icon-minus.svg" alt="minus icon">
+					<div>0</div>
+					<img src="./images/icon-plus.svg" alt="">
+				</div>
+
+				<button class="btn">
+					<img src="./images/icon-cart.svg" alt="cart icon">
+					<span>Add to cart</span>
+				</button>
+			</section>
+		</main>
+
+		<nav class="menu-bar hide" id="menu-bar">
+			<ul class="menu-bar-list">
+				<li class="menu-bar-list-item"><img src="./images/icon-close.svg" alt="close icon" id="close-icon" /></li>
+				<li class="menu-bar-list-item">Collections</li>
+				<li class="menu-bar-list-item">Men</li>
+				<li class="menu-bar-list-item">Women</li>
+				<li class="menu-bar-list-item">About</li>
+				<li class="menu-bar-list-item">Contact</li>
+			</ul>
+		</nav>
+	</div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rajendra Patha</a>.
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
